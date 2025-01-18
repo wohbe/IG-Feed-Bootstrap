@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,118 +9,152 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Instagram Feed - Bootstrap</title>
+</head>
 
-  </head>
-
-  <body>
+<body>
+    <!-- Aquí está la navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center text-dark" href="#">
-            <i class="fa-brands fa-instagram mr-1"></i>
-            <span>Instagram</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-center">
-              <li class="nav-item active">
-                <a class="nav-link">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                        Create a new post
-                      </button>
-                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">Create a new post</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
+            <a class="navbar-brand d-flex align-items-center text-dark" href="#">
+                <i class="fa-brands fa-instagram mr-1"></i>
+                <span>Instagram</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active p-1">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> Create a new post </button>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Create a new post</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <textarea name="new-post" id="new-post" class="form-control" cols="20" rows="5" placeholder="Add the caption of your post here"></textarea>
+                                        <button type="button" class="btn"><i class="fa-solid fa-camera"></i></button><button type="button" class="btn"><i class="fa-sharp fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                            <textarea name="new-post" id="new-post" class="form-control" cols="20" rows="5" placeholder="Add the caption of your post here"></textarea>
-                            <button type="button" class="btn"><i class="fa-solid fa-camera"></i></button><button type="button" class="btn"><i class="fa-sharp fa-solid fa-location-dot"></i></button>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-success">Publish</button>
-                            </div>
-                          </div>
                         </div>
-                      </div>
-                </a>
-              </li>
-  
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center bg-secondary text-white rounded" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                   <i class="fa-solid fa-gear p-1"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Accesibility</a>
-                  <a class="dropdown-item border-bottom border-secondary" href="#">Privacy and Data</a>
-                  <a class="dropdown-item text-danger" href="#">Log out</a>
-                </div>
-              </li>
-            </ul>
-          </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center bg-secondary text-white rounded" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-gear p-1"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Accesibility</a>
+                            <a class="dropdown-item border-bottom border-secondary" href="#">Privacy and Data</a>
+                            <a class="dropdown-item text-danger" href="#">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-
-      <div class ="container mt-2">
-        <div class ="row justify-content-md-center">
-          <button type="button" class="btn btn-sm" style="background-color:transparent"><i class="fa-solid fa-table-cells text-secondary"></i></button>
-<button type="button" class="btn btn-sm" style="background-color:transparent"><i class="fa-solid fa-square text-secondary"></i></button>
+    </nav>
+    <!--Aquí van los botones para cambiar el grid-->
+    <div class="container mt-2">
+        <div class="row justify-content-md-center nav nav-tabs">
+            <button type="button" class="btn btn-sm nav-link" data-toggle="tab" data-target="#three-images">
+              <i class="fa-solid fa-table-cells text-secondary"></i>
+            </button>
+            <button type="button" class="btn btn-sm nav-link active" data-toggle="tab" data-target="#one-image">
+              <i class="fa-solid fa-square text-secondary"></i>
+            </button>
         </div>
-      </div>
-
-      <div class ="container my-3">
-        <div class ="row justify-content-md-center">
-        <div class="card" style="width: 25rem;">
-          <div class="d-flex flex-row px-2 py-1"><h5 class="card-title">Esto es un gato</h4> <small class="ml-auto text-muted">12/11</small></div>
-          <img class="card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="Card image cap">
-          <div class="card-body">
-          <small class="ml-auto pr-2 text-dark"><strong>315 likes</strong></small>
-        <p class="card-text fw-light text-justify">Esto es claramente un gato. Tiene ojos de gato, orejas de gato y pelaje de gato. Suele ignorarte la mayor parte del tiempo y se subirá sobre todas tus cosas o incluso sobre ti, porque a fin de cuentas, es un gato.</p>
-        </div>
-        </div>
-      </div>
-      </div>
-
-      <div class ="container my-3">
-        <div class ="row justify-content-md-center">
-        <div class="card" style="width: 25rem;">
-          <div class="d-flex flex-row px-2 py-1"><h5 class="card-title">Esto no es un gato</h4> <small class="ml-auto text-muted">13/11</small></div>
-          <img class="card-img-top" src="https://www.creaf.cat/sites/default/files/wp-featured-images/tortuga_mediterrania_1_23.jpg" alt="Card image cap">
-          <div class="card-body">
-          <small class="ml-auto pr-2 text-dark"><strong>5 likes</strong></small>
-        <p class="card-text fw-light text-justify">Esto claramente no un gato. Puede ser muchas cosas, pero al ver su falta de pelaje, sus inexistentes orejas picudas y su incapacidad de saltar sobre tu portatil, podemos decir que no es un gato.</p>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div class ="container my-3">
-        <div class ="row justify-content-md-center">
-        <div class="card" style="width: 25rem;">
-          <div class="d-flex flex-row px-2 py-1"><h5 class="card-title">¡Mira! ¡Un perro!</h4> <small class="ml-auto text-muted">23/11</small></div>
-          <img class="card-img-top" src="https://www.publico.es/yo-animal/wp-content/uploads/2023/01/correr-1024x768.jpg" alt="Card image cap">
-          <div class="card-body">
-          <small class="ml-auto pr-2 text-dark"><strong>1.7M likes</strong></small>
-        <p class="card-text fw-light text-justify">No, por supuesto que no es un gato, porque es un perro. Se le ve feliz. Tiene mucho mas pelaje que un gato y que lo que sea que fuera la segunda imagen. Claramente un buen chico.</p>
-          </div>
-        </div>
-      </div>
-      </div>
     </div>
-
+    <!--Contenedor de los dos tipos de grid-->
+    <div class="container my-3 tab-content">
+        <!--Estilo con una imagen por fila-->
+        <div class="tab-pane fade show active" id="one-image">
+            <div class="row justify-content-md-center">
+                <div class="card mb-3" style="width: 25rem;">
+                    <div class="d-flex flex-row px-2 py-1">
+                        <h5 class="card-title">Esto es un gato</h5> <small class="ml-auto text-muted">12/11</small>
+                    </div>
+                    <img class="card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="Card image cap">
+                    <div class="card-body">
+                        <small class="ml-auto pr-2 text-dark"><strong>315 likes</strong></small>
+                        <p class="card-text fw-light text-justify">Esto es claramente un gato. Tiene ojos de gato, orejas de gato y pelaje de gato. Suele ignorarte la mayor parte del tiempo y se subirá sobre todas tus cosas o incluso sobre ti, porque a fin de cuentas, es un gato.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="card mb-3" style="width: 25rem;">
+                    <div class="d-flex flex-row px-2 py-1">
+                        <h5 class="card-title">Esto no es un gato</h5> <small class="ml-auto text-muted">13/11</small>
+                    </div>
+                    <img class="card-img-top" src="https://www.creaf.cat/sites/default/files/wp-featured-images/tortuga_mediterrania_1_23.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <small class="ml-auto pr-2 text-dark"><strong>5 likes</strong></small>
+                        <p class="card-text fw-light text-justify">Esto claramente no un gato. Puede ser muchas cosas, pero al ver su falta de pelaje, sus inexistentes orejas picudas y su incapacidad de saltar sobre tu portátil, podemos decir que no es un gato.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="card" style="width: 25rem;">
+                    <div class="d-flex flex-row px-2 py-1">
+                        <h5 class="card-title">¡Mira! ¡Un perro!</h5> <small class="ml-auto text-muted">23/11</small>
+                    </div>
+                    <img class="card-img-top" src="https://www.publico.es/yo-animal/wp-content/uploads/2023/01/correr-1024x768.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <small class="ml-auto pr-2 text-dark"><strong>1.7M likes</strong></small>
+                        <p class="card-text fw-light text-justify">No, por supuesto que no es un gato, porque es un perro. Se le ve feliz. Tiene mucho más pelaje que un gato y que lo que sea que fuera la segunda imagen. Claramente un buen chico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Estilo con tres imágenes por fila-->
+        <div class="tab-pane fade" id="three-images">
+            <div class="row">
+                <div class="col-md-4 p-2">
+                    <img style="height: 20vw; object-fit: cover;" class="img-fluid" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="Gato">
+                </div>
+                <div class="col-md-4 p-2">
+                    <img style="height: 20vw; object-fit: cover;" class="img-fluid" src="https://www.creaf.cat/sites/default/files/wp-featured-images/tortuga_mediterrania_1_23.jpg" alt="Tortuga">
+                </div>
+                <div class="col-md-4 p-2">
+                    <img style="height: 20vw; object-fit: cover;" class="img-fluid" src="https://www.publico.es/yo-animal/wp-content/uploads/2023/01/correr-1024x768.jpg" alt="Perro">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 p-2">
+                  <img style="height: 20vw; object-fit: cover;" class="img-fluid" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="Gato">
+              </div>
+              <div class="col-md-4 p-2">
+                  <img style="height: 20vw; object-fit: cover;" class="img-fluid" src="https://www.creaf.cat/sites/default/files/wp-featured-images/tortuga_mediterrania_1_23.jpg" alt="Tortuga">
+              </div>
+              <div class="col-md-4 p-2">
+                  <img style="height: 20vw; object-fit: cover;" class="img-fluid" src="https://www.publico.es/yo-animal/wp-content/uploads/2023/01/correr-1024x768.jpg" alt="Perro">
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 p-2">
+                <img style="height: 20vw; object-fit: cover;" class="img-fluid" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="Gato">
+            </div>
+            <div class="col-md-4 p-2">
+                <img style="height: 20vw; object-fit: cover;" class="img-fluid" src="https://www.creaf.cat/sites/default/files/wp-featured-images/tortuga_mediterrania_1_23.jpg" alt="Tortuga">
+            </div>
+            <div class="col-md-4 p-2">
+                <img style="height: 20vw; object-fit: cover;" class="img-fluid" src="https://www.publico.es/yo-animal/wp-content/uploads/2023/01/correr-1024x768.jpg" alt="Perro">
+            </div>
+        </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
